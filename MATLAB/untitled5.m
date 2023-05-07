@@ -1,0 +1,17 @@
+disp('Tanay Kedia');
+disp('9921103196');
+A=input('Enter value of A in 3x8 decoder');
+B=input('Enter valye of B in 3x8 decoder');
+C=input('Enter value of C in 3x8 Decoder');
+Q0 = ~A & ~B & ~C;
+Q1 = ~A & ~B & C;
+Q2 = ~A & B & ~C;
+Q3 = ~A & B & C;
+Q4 = A & ~B & ~C;
+Q5 = A & ~B & C;
+Q6 = A & B & ~C;
+Q7 = A & B & C;
+disp('Decoder Input: ');
+disp([A B C]);
+disp('Decoder Output: ');
+disp([Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7]);
